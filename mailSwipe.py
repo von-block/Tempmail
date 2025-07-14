@@ -117,7 +117,7 @@ try:
         newMail = f"{API}?login={generateUserName()}&domain={domain}"
         reqMail = requests.get(newMail)
         mail = f"{extract()[0]}@{extract()[1]}"
-        pyperclip.copy(mail)
+       #  pyperclip.copy(mail)
         print("\nYour temporary email is " + mail + " (Email address copied to clipboard.)" + "\n")
         print(f"---------------------------- | Inbox of {mail} | ----------------------------\n")
         while True:
